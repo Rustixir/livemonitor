@@ -2,8 +2,11 @@
 ![LiveMonitor](https://github.com/Rustixir/livemonitor/blob/main/logo.png)
 
 # LiveMonitor
-LiveMonitor can track your golang runtime in Real-Time over WebSocket.
+LiveMonitor can track your golang runtime in Real-Time.
 Powered by Skyview(https://github.com/Rustixir/skyview)
+
+
+![LiveMonitor](https://github.com/Rustixir/livemonitor/blob/main/screenshoot.png)
 
 ## What is it ??
 
