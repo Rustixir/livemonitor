@@ -26,6 +26,8 @@ I am very open to discussing the design of the API and what can be made better. 
   disk usage, ... we should collect and send by background
   job to livesocket
 
+- need template func to convert Bytes to     MB because Alloc and some other fields     have very large value and isn't readable   for user
+  
 - rewrite html, css to be better and
   responsive 
   
