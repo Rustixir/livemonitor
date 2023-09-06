@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<title>LiveMonitor</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="/live.js"></script>
+</head>
+<body >
+
+
+<div class="w3-cell-row">
+    <div class="w3-cell w3-padding-24 w3-red">
+        <div class="header-margin-left">
+            <h1>
+                <img src="/logo" class="logo">
+                LiveMonitor
+            </h1>
+            <p>LiveMonitor can track your golang runtime in Real-Time </p>
+        </div>
+    </div>
+</div>
+
+<div class="w3-container w3-margin-top w3-padding ">
+    <div class="w3-container w3-cell-row w3-padding">
+        <div  class="cardsizeinfo w3-padding w3-margin w3-panel w3-card w3-blue w3-padding w3-round-large"><h4>OS: {{.Assigns.Metric.GOOS}} </h4></div>
+        <div  class="cardsizeinfo w3-padding w3-margin w3-panel w3-card w3-blue w3-padding w3-round-large"><h4>ARCH:  {{.Assigns.Metric.GOARCH}} </h4></div>
+        <div  class="cardsizeinfo w3-padding w3-margin w3-panel w3-card w3-blue w3-padding w3-round-large"><h4>NumCpu: {{.Assigns.Metric.NumCpu}} </h4></div>
+        <div  class="cardsizeinfo w3-padding w3-margin w3-panel w3-card w3-blue w3-padding w3-round-large"><h4>Version: {{.Assigns.Metric.GoVersion}} </h4></div>
+    </div>
+    <div class="w3-container w3-cell-row">
+        <div class="cardsize w3-padding w3-margin w3-panel w3-card-4  w3-padding w3-round-large"><h4>NumCgoCall: {{.Assigns.Metric.NumCgoCall}} </h4></div>
+        <div class="cardsize w3-padding w3-margin w3-panel w3-card-4  w3-padding w3-round-large"><h4>MaxProcess: {{.Assigns.Metric.MaxProcess}} </h4></div>
+        <div class="cardsize w3-padding w3-margin w3-panel w3-card-4  w3-padding w3-round-large"><h4>NumGoroutine: {{.Assigns.Metric.NumGoroutine}} </h4></div>
+    </div>
+
+    <div class="w3-container w3-cell-row">
+        <div class="cardsize w3-padding w3-margin w3-panel w3-card-4  w3-padding w3-round-large"><h4> Alloc: {{.Assigns.MemStats.Alloc}} B</h4></div>
+        <div class="cardsize w3-padding w3-margin w3-panel w3-card-4  w3-padding w3-round-large"><h4> TotalAlloc: {{.Assigns.MemStats.TotalAlloc}} B</h4></div>
+        <div class="cardsize w3-padding w3-margin w3-panel w3-card-4  w3-padding w3-round-large"><h4> Mallocs: {{.Assigns.MemStats.Mallocs}} B</h4></div>
+    </div>
+    <div class="w3-container w3-cell-row">
+        <div class="cardsize w3-padding w3-margin w3-panel w3-card-4  w3-padding w3-round-large" ><h4> NextGC: {{.Assigns.MemStats.NextGC}} </h4></div>
+        <div class="cardsize w3-padding w3-margin w3-panel w3-card-4  w3-padding w3-round-large" ><h4> PauseTotalNs: {{.Assigns.MemStats.PauseTotalNs}} </h4></div>
+        <div class="cardsize w3-padding w3-margin w3-panel w3-card-4  w3-padding w3-round-large" ><h4> NumGC: {{.Assigns.MemStats.NumGC}} </h4></div>
+        <div class="cardsize w3-padding w3-margin w3-panel w3-card-4  w3-padding w3-round-large"><h4>NumForcedGC: {{.Assigns.MemStats.NumForcedGC}} </h4></div>
+    </div>
+</div>
+
+
+
+<div class="w3-container w3-margin-top">
+    <div class="w3-cell-row w3-padding w3-margin-top">
+        <h3 class="w3-cell w3-padding w3-red w3-round-xlarge">Made by SkyView</h3>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+<style>
+
+    .logo {
+        width: 90px;
+        height: 100px
+    }
+
+    .header-margin-left {
+        margin-left: 70px;
+    }
+
+    .header-margin-left p {
+        font-size: 18px;
+    }
+
+    .cardsizeinfo {
+        padding-top: 20px;
+        width: 240px;
+        height: 70px;
+        float: left;
+        font-family: Serif;
+    }
+
+    .cardsize {
+        padding-top: 500px;
+        width: 240px;
+        height: 100px;
+        float: left;
+    }
+</style>
