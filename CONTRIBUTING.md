@@ -26,6 +26,9 @@ I am very open to discussing the design of the API and what can be made better. 
   disk usage, ... we should collect and send by background
   job to livesocket
 
+- rewrite html, css to be better and
+  responsive 
+  
 ## Coding conventions 
 
 - gofmt
