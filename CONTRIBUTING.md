@@ -29,4 +29,4 @@ I am very open to discussing the design of the API and what can be made better. 
 ## Coding conventions 
 
 - gofmt
-- Document at least all the public interfaces etc
+- clean & readable code
